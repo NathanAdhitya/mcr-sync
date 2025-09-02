@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy dependency definition files
 # By copying these first, we leverage Docker's layer caching.
 # The 'bun install' step will only re-run if these files change.
-COPY package.json bun.lockb tsconfig.json ./
+COPY package.json bun.lock tsconfig.json ./
 
 # Install dependencies. Using --frozen-lockfile is best practice for CI/CD and Docker
 # to ensure reproducible builds.
