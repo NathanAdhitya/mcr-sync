@@ -1,0 +1,22 @@
+# Default domain suffixes to append to discovered Docker slugs.
+default_domain_suffix:
+  - example.com
+
+# Manually defined routes that don't come from Docker.
+manual: []
+  # This will create:
+  # server1.sg1.example.com -> 192.168.0.5:5000
+  # server1.ih1.example.com -> 192.168.0.5:5000
+  #server1:
+  #  host: 192.168.0.5
+  #  port: 5000
+
+  # This will ONLY create:
+  # server2.prod.example.com -> 192.168.0.5:5000
+  # because override_suffix is present.
+  #server2:
+  #  host: 192.168.0.5
+  #  port: 5000
+  #  override_suffix:
+  #    - prod.example.com
+

@@ -1,0 +1,21 @@
+{
+  "name": "sync",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/dockerode": "^3.3.43",
+    "@types/js-yaml": "^4.0.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dockerode": "^4.0.7",
+    "js-yaml": "^4.1.0"
+  }
+}
